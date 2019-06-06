@@ -1,5 +1,6 @@
 import React from 'react';
 import { InputWrapper, CommentInput } from './CommentsStyles';
+const FontAwesome = require('react-fontawesome');
 
 const CommentForm = props => {
   return (
@@ -13,7 +14,8 @@ const CommentForm = props => {
           onChange={props.commentHandler}
         ></CommentInput>
 
-        <i className="fas fa-ellipsis-h fa-sm"></i>
+        <FontAwesome name='rocket' />
+        <FontAwesome name='rocket' />
       </InputWrapper>
     </form>
   );
